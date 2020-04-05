@@ -1,6 +1,7 @@
 <template>
     <section class="section">
         <div class="container">
+            <h4  class="has-text-centered is-size-4">Ultimo aggiornamento: </h4><br>          
             <div class="tile is-ancestor" style="text-align:center">
                 <div class="tile is-parent">
                     <article class="tile is-child box style-box-grey">
