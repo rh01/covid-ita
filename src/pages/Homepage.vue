@@ -1,6 +1,7 @@
 <template>
   <div>
     <navbar></navbar>
+    <h3 class="has-text-centered is-size-2">Monitoraggio della situazione in Italia</h3>
     <cardstats></cardstats>
   </div>
 </template>
