@@ -13,10 +13,10 @@
         </div>
         <div id="drawer" class="navbar-menu" :class="{ 'is-active': showNav }">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item style-navbar-link">
                     Home
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item style-navbar-link">
                     Statistiche per regione
                 </a>
             </div>

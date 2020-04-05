@@ -1,0 +1,10 @@
+*{
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: 300;
+}
+.style-navbar-link{
+    color:rgba(102, 102, 102, 0.986)!important;
+}
+.style-navbar-link:hover{
+    color:black!important;
+}
