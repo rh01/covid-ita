@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar has-navbar-fixed-top is-spaced" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top has-navbar-fixed-top" role="navigation" aria-label="main navigation" :fixed-top="true">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://github.com/pcm-dpc/COVID-19">
                 <img src="../assets/logo.png">
@@ -13,12 +13,12 @@
         </div>
         <div id="drawer" class="navbar-menu" :class="{ 'is-active': showNav }">
             <div class="navbar-start">
-                <a class="navbar-item style-navbar-link">
+                <router-link a class="navbar-item style-navbar-link" to="/">
                     Home
-                </a>
-                <a class="navbar-item style-navbar-link">
+                </router-link>
+                <router-link class="navbar-item style-navbar-link" to="/stats">
                     Statistiche per regione
-                </a>
+                </router-link>
             </div>
         </div>
     </nav>

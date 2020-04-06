@@ -13,7 +13,7 @@
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-yellow">
                             <p class="subtitle">Positivi</p>
-                            <p class="title has-text-warning">{{ this.positivi }}</p>
+                            <p class="title" style="color:#FFC107">{{ this.positivi }}</p>
                         </article>
                     </div>
                     <div class="tile is-parent">
@@ -57,7 +57,7 @@
             .get('https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-andamento-nazionale-latest.json')
             .then(response => {
                 this.info = response.data;
-                this.positivi = this.info[0].nuovi_positivi;
+                this.positivi = this.info[0].totale_positivi;
                 this.guariti = this.info[0].dimessi_guariti;
                 this.deceduti = this.info[0].deceduti;
                 this.casi = this.info[0].totale_casi;
