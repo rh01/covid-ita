@@ -31,6 +31,7 @@
                 </div>
             </div>
         </section>
+        <h4 class="has-text-centered is-size-5">Nuovi positivi: {{ this.nuoviPositivi }}</h4><br>          
     </div>
 </template>
 
@@ -49,6 +50,7 @@
                 casi: 0,
                 deceduti: 0,
                 positivi: 0,
+                nuoviPositivi: 0,
                 dataAggiornamento: null
             }
         },
@@ -61,6 +63,7 @@
                 this.guariti = this.info[0].dimessi_guariti;
                 this.deceduti = this.info[0].deceduti;
                 this.casi = this.info[0].totale_casi;
+                this.nuoviPositivi = this.info[0].nuovi_positivi;
                 this.dataAggiornamento = moment(this.info[0].data).format('MM/DD/YYYY');
             })
             .catch(error => {

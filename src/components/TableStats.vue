@@ -24,6 +24,11 @@
                 <b-table-column field="dimessi_guariti" label="Guariti" numeric>
                     {{ props.row.dimessi_guariti }}
                 </b-table-column>
+
+                <b-table-column field="nuovi_positivi" label="Nuovi positivi" numeric>
+                    {{ props.row.nuovi_positivi }}
+                </b-table-column>
+                
             </template>
 
             <template slot="empty">
@@ -55,33 +60,7 @@
                 errored: false,
                 loading: true,
                 info: null,
-                dataAggiornamento: null,
-                columns: [
-                    {
-                        field: 'denominazione_regione',
-                        label: 'Regione',
-                    },
-                    {
-                        field: 'totale_casi',
-                        label: 'Totale casi',
-                        numeric: true
-                    },
-                    {
-                        field: 'totale_positivi',
-                        label: 'Positivi',
-                        numeric: true
-                    },
-                    {
-                        field: 'deceduti',
-                        label: 'Deceduti',
-                        numeric: true
-                    },
-                    {
-                        field: 'dimessi_guariti',
-                        label: 'Guariti',
-                        numeric: true
-                    }
-                ]
+                dataAggiornamento: null
             }
         },
         methods: {
@@ -98,7 +77,8 @@
                             'totale_casi': parseInt(item.totale_casi),
                             'totale_positivi': parseInt(item.totale_positivi),
                             'deceduti': parseInt(item.deceduti),
-                            'dimessi_guariti': parseInt(item.dimessi_guariti)
+                            'dimessi_guariti': parseInt(item.dimessi_guariti),
+                            'nuovi_positivi': parseInt(item.nuovi_positivi)
                         });
                     }
                 })
