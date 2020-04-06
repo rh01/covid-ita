@@ -64,7 +64,7 @@
                 this.deceduti = this.info[0].deceduti;
                 this.casi = this.info[0].totale_casi;
                 this.nuoviPositivi = this.info[0].nuovi_positivi;
-                this.dataAggiornamento = moment(this.info[0].data).format('MM/DD/YYYY');
+                this.dataAggiornamento = moment(this.info[0].data).format('DD/MM/YYYY');
             })
             .catch(error => {
                 console.log(error);

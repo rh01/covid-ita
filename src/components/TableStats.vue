@@ -69,7 +69,7 @@
                 .get('https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni-latest.json')
                 .then(response => {
                     this.info = response.data;
-                    this.dataAggiornamento = moment(this.info[0].data).format('MM/DD/YYYY');
+                    this.dataAggiornamento = moment(this.info[0].data).format('DD/MM/YYYY');
                     for(var i in this.info) {
                         var item = this.info[i];
                         this.data.push({
