@@ -2,7 +2,7 @@
   <div class="hero is-fullheight">
     <navbar></navbar>
     <br><br>
-    <h3 class="has-text-centered is-size-2">Monitoraggio della situazione in Italia</h3>
+    <h3 class="has-text-centered is-size-2">Situazione in Italia</h3>
     <cardstats></cardstats>
     <foot></foot>
   </div>
