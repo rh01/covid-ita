@@ -7,25 +7,25 @@
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-grey">
                             <p class="subtitle">Casi totali</p>
-                            <animated-number class="title has-text-dark" :round="true"  :duration="1000" :value="this.casi" />
+                            <animated-number class="title has-text-dark" :round="true"  :duration="1000" :value="this.casi" :delay="500" />
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-yellow">
                             <p class="subtitle">Positivi</p>
-                            <animated-number class="title" style="color:#FFC107" :round="true"  :duration="1000" :value="this.positivi" />
+                            <animated-number class="title" style="color:#FFC107" :round="true"  :duration="1000" :value="this.positivi" :delay="500" />
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-red">
                             <p class="subtitle">Deceduti</p>
-                            <animated-number class="title has-text-danger" :round="true"  :duration="1000" :value="this.deceduti" />
+                            <animated-number class="title has-text-danger" :round="true"  :duration="1000" :value="this.deceduti" :delay="500" />
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-green">
-                            <p class="subtitle ì">Guariti</p>
-                            <animated-number class="title has-text-success" :round="true"  :duration="1000" :value="this.guariti" />
+                            <p class="subtitle">Guariti</p>
+                            <animated-number class="title has-text-success" :round="true"  :duration="1000" :value="this.guariti" :delay="500" />
                         </article>
                     </div>
                 </div>

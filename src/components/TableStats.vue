@@ -10,23 +10,23 @@
                 </b-table-column>
 
                 <b-table-column field="totale_casi" label="Totale casi" numeric>
-                    {{ props.row.totale_casi }}
+                    <animated-number :value="props.row.totale_casi" :round="true" :duration="1000" :delay="500" />
                 </b-table-column>
 
                 <b-table-column field="totale_positivi" label="Totale positivi" numeric>
-                    {{ props.row.totale_positivi }}
+                    <animated-number :value="props.row.totale_positivi" :round="true" :duration="1000" :delay="500" />
                 </b-table-column>
 
                 <b-table-column field="deceduti" label="Deceduti" numeric>
-                    {{ props.row.deceduti }}
+                   <animated-number :value="props.row.deceduti" :round="true" :duration="1000" :delay="500" />
                 </b-table-column>   
 
                 <b-table-column field="dimessi_guariti" label="Guariti" numeric>
-                    {{ props.row.dimessi_guariti }}
+                    <animated-number :value="props.row.dimessi_guariti" :round="true" :duration="1000" :delay="500" />
                 </b-table-column>
 
                 <b-table-column field="nuovi_positivi" label="Nuovi positivi" numeric>
-                    {{ props.row.nuovi_positivi }}
+                    <animated-number :value="props.row.nuovi_positivi" :round="true" :duration="1000" :delay="500" />
                 </b-table-column>
                 
             </template>
@@ -51,9 +51,13 @@
 <script>
     import axios from 'axios';
     import moment from 'moment';
+    import AnimatedNumber from "animated-number-vue";
 
     export default {
         name: 'TableStats',
+        components: {
+            'animated-number': AnimatedNumber
+        },
         data: function() {
             return {
                 data: [],
