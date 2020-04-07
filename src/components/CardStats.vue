@@ -7,25 +7,25 @@
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-grey">
                             <p class="subtitle">Casi totali</p>
-                            <p class="title has-text-dark">{{ this.casi }}</p>
+                            <animated-number class="title has-text-dark" :round="true"  :duration="1000" :value="this.casi" />
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-yellow">
                             <p class="subtitle">Positivi</p>
-                            <p class="title" style="color:#FFC107">{{ this.positivi }}</p>
+                            <animated-number class="title" style="color:#FFC107" :round="true"  :duration="1000" :value="this.positivi" />
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-red">
                             <p class="subtitle">Deceduti</p>
-                            <p class="title has-text-danger">{{ this.deceduti }}</p>
+                            <animated-number class="title has-text-danger" :round="true"  :duration="1000" :value="this.deceduti" />
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child box style-box-green">
                             <p class="subtitle ì">Guariti</p>
-                            <p class="title has-text-success">{{ this.guariti }}</p>
+                            <animated-number class="title has-text-success" :round="true"  :duration="1000" :value="this.guariti" />
                         </article>
                     </div>
                 </div>
@@ -38,9 +38,13 @@
 <script>
     import axios from 'axios';
     import moment from 'moment';
+    import AnimatedNumber from "animated-number-vue";
 
     export default {
         name: 'CardStats',
+        components: {
+            'animated-number': AnimatedNumber
+        },
         data: function() {
             return {
                 loading: true,
